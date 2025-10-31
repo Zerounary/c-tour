@@ -1,0 +1,6 @@
+[
+{
+  "directory": "e:\\ws\\c-lang\\c-tour",
+  "arguments": ["D:\\Develop\\LLVM\\bin\\clang.exe", "-c", "-Qunused-arguments", "-m64", "--target=x86_64-windows-msvc", "-target", "x86_64-windows-msvc", "-o", "build\\.objs\\test\\windows\\x64\\src\\main.c.obj", "src\\main.c"],
+  "file": "src\\main.c"
+}]
