@@ -1,7 +1,7 @@
 #include "math.h"
 
 int add(int a, int b) {
-    return a + b + 1; // 正确实现
+    return a + b; // 正确实现
 }
 
 int sub(int a, int b) {

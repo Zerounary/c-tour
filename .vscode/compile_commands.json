@@ -1,6 +1,26 @@
 [
 {
   "directory": "e:\\ws\\c-lang\\c-tour",
-  "arguments": ["D:\\Develop\\LLVM\\bin\\clang.exe", "-c", "-Qunused-arguments", "-m64", "--target=x86_64-windows-msvc", "-target", "x86_64-windows-msvc", "-o", "build\\.objs\\test\\windows\\x64\\src\\main.c.obj", "src\\main.c"],
+  "arguments": ["D:\\Develop\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/MD", "/O2", "/std:c11", "/IC:\\Users\\85065\\AppData\\Local\\.xmake\\packages\\c\\cunit\\3.4.4\\675de230ec4a415cbe03cb2e5a1ca49e\\include", "/DNDEBUG", "/Fobuild\\.objs\\test_math\\windows\\x64\\release\\test\\test_math.c.obj", "test\\test_math.c", "-imsvc", "D:\\Develop\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\include", "-imsvc", "D:\\Develop\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\ATLMFC\\include", "-imsvc", "D:\\Develop\\Microsoft Visual Studio\\2022\\Community\\VC\\Auxiliary\\VS\\include", "-imsvc", "D:\\Windows Kits\\10\\include\\10.0.22000.0\\ucrt", "-imsvc", "D:\\Windows Kits\\10\\\\include\\10.0.22000.0\\\\um", "-imsvc", "D:\\Windows Kits\\10\\\\include\\10.0.22000.0\\\\shared", "-imsvc", "D:\\Windows Kits\\10\\\\include\\10.0.22000.0\\\\winrt", "-imsvc", "D:\\Windows Kits\\10\\\\include\\10.0.22000.0\\\\cppwinrt"],
+  "file": "test\\test_math.c"
+},
+{
+  "directory": "e:\\ws\\c-lang\\c-tour",
+  "arguments": ["D:\\Develop\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/MD", "/O2", "/std:c11", "/DNDEBUG", "/Fobuild\\.objs\\app\\windows\\x64\\release\\src\\main.c.obj", "src\\main.c", "-imsvc", "D:\\Develop\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\include", "-imsvc", "D:\\Develop\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\ATLMFC\\include", "-imsvc", "D:\\Develop\\Microsoft Visual Studio\\2022\\Community\\VC\\Auxiliary\\VS\\include", "-imsvc", "D:\\Windows Kits\\10\\include\\10.0.22000.0\\ucrt", "-imsvc", "D:\\Windows Kits\\10\\\\include\\10.0.22000.0\\\\um", "-imsvc", "D:\\Windows Kits\\10\\\\include\\10.0.22000.0\\\\shared", "-imsvc", "D:\\Windows Kits\\10\\\\include\\10.0.22000.0\\\\winrt", "-imsvc", "D:\\Windows Kits\\10\\\\include\\10.0.22000.0\\\\cppwinrt"],
   "file": "src\\main.c"
+},
+{
+  "directory": "e:\\ws\\c-lang\\c-tour",
+  "arguments": ["D:\\Develop\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/MD", "/O2", "/std:c11", "/DNDEBUG", "/Fobuild\\.objs\\app\\windows\\x64\\release\\src\\math.c.obj", "src\\math.c", "-imsvc", "D:\\Develop\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\include", "-imsvc", "D:\\Develop\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\ATLMFC\\include", "-imsvc", "D:\\Develop\\Microsoft Visual Studio\\2022\\Community\\VC\\Auxiliary\\VS\\include", "-imsvc", "D:\\Windows Kits\\10\\include\\10.0.22000.0\\ucrt", "-imsvc", "D:\\Windows Kits\\10\\\\include\\10.0.22000.0\\\\um", "-imsvc", "D:\\Windows Kits\\10\\\\include\\10.0.22000.0\\\\shared", "-imsvc", "D:\\Windows Kits\\10\\\\include\\10.0.22000.0\\\\winrt", "-imsvc", "D:\\Windows Kits\\10\\\\include\\10.0.22000.0\\\\cppwinrt"],
+  "file": "src\\math.c"
+},
+{
+  "directory": "e:\\ws\\c-lang\\c-tour",
+  "arguments": ["D:\\Develop\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/MD", "/O2", "/std:c11", "/Isrc", "/DNDEBUG", "/Fobuild\\.objs\\math\\windows\\x64\\release\\src\\main.c.obj", "src\\main.c", "-imsvc", "D:\\Develop\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\include", "-imsvc", "D:\\Develop\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\ATLMFC\\include", "-imsvc", "D:\\Develop\\Microsoft Visual Studio\\2022\\Community\\VC\\Auxiliary\\VS\\include", "-imsvc", "D:\\Windows Kits\\10\\include\\10.0.22000.0\\ucrt", "-imsvc", "D:\\Windows Kits\\10\\\\include\\10.0.22000.0\\\\um", "-imsvc", "D:\\Windows Kits\\10\\\\include\\10.0.22000.0\\\\shared", "-imsvc", "D:\\Windows Kits\\10\\\\include\\10.0.22000.0\\\\winrt", "-imsvc", "D:\\Windows Kits\\10\\\\include\\10.0.22000.0\\\\cppwinrt"],
+  "file": "src\\main.c"
+},
+{
+  "directory": "e:\\ws\\c-lang\\c-tour",
+  "arguments": ["D:\\Develop\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/MD", "/O2", "/std:c11", "/Isrc", "/DNDEBUG", "/Fobuild\\.objs\\math\\windows\\x64\\release\\src\\math.c.obj", "src\\math.c", "-imsvc", "D:\\Develop\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\include", "-imsvc", "D:\\Develop\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\ATLMFC\\include", "-imsvc", "D:\\Develop\\Microsoft Visual Studio\\2022\\Community\\VC\\Auxiliary\\VS\\include", "-imsvc", "D:\\Windows Kits\\10\\include\\10.0.22000.0\\ucrt", "-imsvc", "D:\\Windows Kits\\10\\\\include\\10.0.22000.0\\\\um", "-imsvc", "D:\\Windows Kits\\10\\\\include\\10.0.22000.0\\\\shared", "-imsvc", "D:\\Windows Kits\\10\\\\include\\10.0.22000.0\\\\winrt", "-imsvc", "D:\\Windows Kits\\10\\\\include\\10.0.22000.0\\\\cppwinrt"],
+  "file": "src\\math.c"
 }]
