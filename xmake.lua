@@ -1,75 +1,26 @@
 add_rules("mode.debug", "mode.release")
 
-target("test")
+set_project("c-test-demo")
+set_version("1.0.0")
+set_languages("c99")
+
+
+-- 1. 定义被测试的核心库（将源文件编译为静态库，方便测试目标链接）
+target("math")
+    set_kind("static") -- 静态库，供测试代码链接
+    add_files("src/*.c") -- 源文件
+    add_includedirs("src") -- 头文件目录（供测试代码引用）
+
+target("app")
     set_kind("binary")
     add_files("src/*.c")
 
---
--- If you want to known more usage about xmake, please see https://xmake.io
---
--- ## FAQ
---
--- You can enter the project directory firstly before building project.
---
---   $ cd projectdir
---
--- 1. How to build project?
---
---   $ xmake
---
--- 2. How to configure project?
---
---   $ xmake f -p [macosx|linux|iphoneos ..] -a [x86_64|i386|arm64 ..] -m [debug|release]
---
--- 3. Where is the build output directory?
---
---   The default output directory is `./build` and you can configure the output directory.
---
---   $ xmake f -o outputdir
---   $ xmake
---
--- 4. How to run and debug target after building project?
---
---   $ xmake run [targetname]
---   $ xmake run -d [targetname]
---
--- 5. How to install target to the system directory or other output directory?
---
---   $ xmake install
---   $ xmake install -o installdir
---
--- 6. Add some frequently-used compilation flags in xmake.lua
---
--- @code
---    -- add debug and release modes
---    add_rules("mode.debug", "mode.release")
---
---    -- add macro definition
---    add_defines("NDEBUG", "_GNU_SOURCE=1")
---
---    -- set warning all as error
---    set_warnings("all", "error")
---
---    -- set language: c99, c++11
---    set_languages("c99", "c++11")
---
---    -- set optimization: none, faster, fastest, smallest
---    set_optimize("fastest")
---
---    -- add include search directories
---    add_includedirs("/usr/include", "/usr/local/include")
---
---    -- add link libraries and search directories
---    add_links("tbox")
---    add_linkdirs("/usr/local/lib", "/usr/lib")
---
---    -- add system link libraries
---    add_syslinks("z", "pthread")
---
---    -- add compilation and link flags
---    add_cxflags("-stdnolib", "-fno-strict-aliasing")
---    add_ldflags("-L/usr/local/lib", "-lpthread", {force = true})
---
--- @endcode
---
+-- 3. 定义测试目标
+target("test_math")
+    set_kind("binary") -- 测试程序为可执行文件
+    add_files("test/*.c") -- 测试代码
+    add_deps("math") -- 依赖核心库（被测试代码）
+    set_runargs("--verbose") -- 测试程序运行参数（可选，让 CUnit 输出详细日志）
 
+-- 4. 注册测试目标（可选，方便用 xmake test 命令运行）
+add_tests("math_test", "$(builddir)/test_math")
